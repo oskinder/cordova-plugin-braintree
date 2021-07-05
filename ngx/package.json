@@ -1,14 +1,14 @@
 {
-  "description": "Braintree native 3DS",
+  "description": "Braintree native",
   "module": "index.js",
   "typings": "index.d.ts",
   "author": "ionic",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MedITSolutionsKurman/cordova-plugin-braintree-3ds"
+    "url": "https://github.com/oskinder/cordova-plugin-braintree"
   },
-  "name": "cordova-plugin-braintree-3ds",
+  "name": "cordova-plugin-braintree",
   "dependencies": {
     "@types/cordova": "latest"
   },
