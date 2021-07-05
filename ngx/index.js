@@ -10,11 +10,11 @@ var Braintree = /** @class */ (function (_super) {
     Braintree.prototype.setupApplePay = function (options) { return cordova(this, "setupApplePay", { "platforms": ["iOS"] }, arguments); };
     Braintree.prototype.presentDropInPaymentUI = function (options) { return cordova(this, "presentDropInPaymentUI", { "platforms": ["Android", "iOS"] }, arguments); };
     Braintree.pluginName = "Braintree";
-    Braintree.plugin = "cordova-plugin-braintree-3ds";
+    Braintree.plugin = "cordova-plugin-braintree";
     Braintree.pluginRef = "BraintreePlugin";
-    Braintree.repo = "https://github.com/MedITSolutionsKurman/cordova-plugin-braintree-3ds";
+    Braintree.repo = "https://github.com/oskinder/cordova-plugin-braintree";
     Braintree.platforms = ["Android", "iOS"];
-    Braintree.install = "ionic cordova plugin add https://github.com/MedITSolutionsKurman/cordova-plugin-braintree-3ds";
+    Braintree.install = "ionic cordova plugin add https://github.com/oskinder/cordova-plugin-braintree";
     Braintree.installVariables = [];
     Braintree = __decorate([
         Injectable()
