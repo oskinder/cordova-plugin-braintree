@@ -7,16 +7,6 @@ android {
     }
 }
 
-repositories {
-    maven {
-        url "https://cardinalcommerceprod.jfrog.io/artifactory/android"
-        credentials {
-            username 'braintree_team_sdk'
-            password 'AKCp8jQcoDy2hxSWhDAUQKXLDPDx6NYRkqrgFLRc3qDrayg6rrCbJpsKKyMwaykVL8FWusJpp'
-        }
-    }
-}
-
 dependencies {
     api 'com.braintreepayments.api:braintree:4.+'
     api 'om.braintreepayments.api:drop-in:5.+'
