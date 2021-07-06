@@ -348,20 +348,6 @@ public final class BraintreePlugin extends CordovaPlugin implements PaymentMetho
             resultMap.put("paypalAccount", innerMap);
         }
 
-        // 3D Secure
-        if (paymentMethodNonce instanceof CardNonce) {
-            CardNonce cardNonce = (CardNonce) paymentMethodNonce;
-            ThreeDSecureInfo threeDSecureInfo = cardNonce.getThreeDSecureInfo();
-
-            if (threeDSecureInfo != null) {
-                Map<String, Object> innerMap = new HashMap<String, Object>();
-                innerMap.put("liabilityShifted", threeDSecureInfo.isLiabilityShifted());
-                innerMap.put("liabilityShiftPossible", threeDSecureInfo.isLiabilityShiftPossible());
-
-                resultMap.put("threeDSecureInfo", innerMap);
-            }
-        }
-
         // Venmo
         if (paymentMethodNonce instanceof VenmoAccountNonce) {
             VenmoAccountNonce venmoAccountNonce = (VenmoAccountNonce) paymentMethodNonce;
